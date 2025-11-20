@@ -1,0 +1,18 @@
+# Copy to config.yaml and adjust values.
+channel_owners:
+  C123CLIENT: U234OWNER  # channel_id: owner_user_id
+  client-support: U456OWNER  # can also use channel names
+team_member_ids:
+  - U234OWNER
+  - U345TEAM
+business_hours:
+  start: "08:00"
+  end: "17:00"
+  timezone: "America/New_York"
+  weekdays_only: true
+business_reply_hours: 4
+overall_reply_hours: 24
+check_interval_minutes: 10
+log_path: "logs/response_report.csv"
+trail_log_path: "logs/trail.log"
+reminder_text_template: "Reminder: Client message in <#{}> has been waiting {} hours for a reply. Please respond."
